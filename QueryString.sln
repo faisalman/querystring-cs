@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryString", "QueryString\QueryString.csproj", "{A3D139E7-AAD9-49A1-B9BB-8F70DDAAA79D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console", "Console\Console.csproj", "{DC08400D-E384-4608-AA14-09B7B4AFC8CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3D139E7-AAD9-49A1-B9BB-8F70DDAAA79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D139E7-AAD9-49A1-B9BB-8F70DDAAA79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D139E7-AAD9-49A1-B9BB-8F70DDAAA79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D139E7-AAD9-49A1-B9BB-8F70DDAAA79D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC08400D-E384-4608-AA14-09B7B4AFC8CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC08400D-E384-4608-AA14-09B7B4AFC8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC08400D-E384-4608-AA14-09B7B4AFC8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC08400D-E384-4608-AA14-09B7B4AFC8CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Console\Console.csproj
+	EndGlobalSection
+EndGlobal
