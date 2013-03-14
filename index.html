@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>QueryString.cs by faisalman</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>QueryString.cs</h1>
+        <p>Extended C# QueryString Library</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/faisalman/querystring-cs" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/faisalman/querystring-cs/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/faisalman/querystring-cs/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>QueryString.cs</h1>
+
+<p>Extended C# QueryString Library</p>
+
+<h2>Example</h2>
+
+<div class="highlight"><pre><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+<span class="k">using</span> <span class="nn">Faisalman.Utils</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">Program</span>
+<span class="p">{</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span> <span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="kt">string</span> <span class="n">url</span> <span class="p">=</span> <span class="s">"http://google.com/search"</span><span class="p">;</span>
+    <span class="kt">var</span> <span class="n">queries</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span>
+    <span class="p">{</span>
+      <span class="p">{</span> <span class="s">"q"</span><span class="p">,</span> <span class="s">"querystring.cs"</span> <span class="p">},</span>
+      <span class="p">{</span> <span class="s">"hl"</span><span class="p">,</span> <span class="s">"en"</span> <span class="p">},</span>
+      <span class="p">{</span> <span class="s">"ref"</span><span class="p">,</span> <span class="s">"faisalman"</span> <span class="p">}</span>
+    <span class="p">};</span>
+    <span class="kt">string</span> <span class="n">query</span> <span class="p">=</span> <span class="n">QueryString</span><span class="p">.</span><span class="n">Build</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">queries</span><span class="p">);</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">query</span><span class="p">);</span> <span class="c1">// http://google.com/search?q=querystring.cs&amp;hl=en&amp;ref=faisalman</span>
+
+    <span class="kt">var</span> <span class="n">queries2</span> <span class="p">=</span> <span class="n">QueryString</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">query</span><span class="p">);</span>
+    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">queries2</span><span class="p">[</span><span class="s">"ref"</span><span class="p">]);</span> <span class="c1">// faisalman</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2>License</h2>
+
+<p>MIT License</p>
+
+<p>Copyright © 2013 Faisalman &lt;<a href="mailto:fyzlman@gmail.com">fyzlman@gmail.com</a>&gt;</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/faisalman">faisalman</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
